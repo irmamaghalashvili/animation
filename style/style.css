@@ -1,0 +1,66 @@
+/*backgorund*/
+.relative {
+	position: relative;
+}
+.size5 {
+	width: 100%;
+}
+/*fishes*/
+.absolute2 {
+	bottom: 120px;
+	right: 450px;
+	position: absolute;
+}
+.size2 {
+	width: 40px;
+	height: 40px;
+	animation: fishmovetwo 10s infinite;
+}
+.absolute3 {
+	bottom: 250px;
+	right: 150px;
+	position: absolute;
+}
+.size3 {
+	width: 200px;
+	height: 200px;
+}
+/*divers*/
+.absolute5 {
+	bottom: 350px;
+	left: 0px;
+	position: absolute;
+}
+.diver {
+	width: 250px;
+	height: 150px;
+}
+.diver-move {
+	position: relative;
+}
+.move {
+	animation: divermove 30s infinite;
+	position: absolute;
+}
+@keyframes divermove {
+	0% {left: 0 ; bottom: 0}
+	20% {bottom: 35px}
+	40% {bottom: 55px}
+	60% {bottom: 75px}
+	100% {bottom: 100% ; left: 100%}
+}
+.fish-move {
+	position: relative;
+}
+.move3 {
+	animation: fishmove 20s infinite;
+	position: absolute;
+}
+@keyframes fishmove {
+	from {right: 0 ; bottom: 0}
+	to {right: 90% ; bottom: 0}
+}
+@keyframes fishmovetwo {
+	from {transform: translateX(0px);}
+	to {transform: translateX(-900px);}
+}
